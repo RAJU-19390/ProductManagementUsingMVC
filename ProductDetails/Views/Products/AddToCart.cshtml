@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "AddToCart";
+}
+
+<h2>AddToCart</h2>
+<center>
+    <h2>Product Id : @ViewBag.id</h2>
+    <form method="post">
+        <label>Enter Quantity of @ViewBag.id :</label>
+        <input type="number" name="productqty" placeholder="select here..." /><br />
+        <label>Enter Your Address to Deliver :</label>
+        <input type="text" name="address" placeholder="Type here..." /><br />
+        <input type="submit" name="GetProducts" value="Products Menu" />
+        <input type="submit" name="AddToCart" value="Add To Cart" />
+    </form>
+</center>

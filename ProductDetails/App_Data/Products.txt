@@ -1,0 +1,6 @@
+101,Mouse,500
+102,Keyboard,800
+103,DellMonitor,4000
+201,Laptop,63500
+202,Dell CPU,20000
+101,Table,1000

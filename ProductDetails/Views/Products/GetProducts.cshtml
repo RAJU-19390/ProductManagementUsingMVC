@@ -1,0 +1,28 @@
+﻿@model List<ProductDetails.Models.ProductModel>
+
+@{
+    ViewBag.Title = "GetProducts";
+}
+
+<h2>Product List</h2>
+
+<table class="table">
+    <tr>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>Action</th>
+    </tr>
+
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>@product.ProductId</td>
+            <td>@product.ProductName</td>
+            <td>@product.ProductPrice</td>
+            <td>
+                @Html.ActionLink("Add to Cart", "AddToCart", new { id = product.ProductId })
+            </td>
+        </tr>
+    }
+</table>
